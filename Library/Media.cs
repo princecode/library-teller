@@ -11,12 +11,12 @@ namespace Library
         public virtual string Title { get;  set; }
         public virtual string Length { get;  set; }
         public int RentalLength { get; set; }
-        protected DateTime RentendDate { get;  set; }
+        protected DateTime RentedDate { get;  set; }
     
         
         public Media()
         {
-            RentendDate = DateTime.Today;
+            RentedDate = DateTime.Today;
         }
         
         public abstract void PrintMediaDetails();
@@ -25,7 +25,7 @@ namespace Library
 
         public virtual void  SetRentedDate()
         {
-            RentendDate = DateTime.Today;
+            RentedDate = DateTime.Today;
         }
     }
 }

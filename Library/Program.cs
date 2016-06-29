@@ -25,7 +25,7 @@ namespace Library
             List<Media> rentedMedia = new List<Media>();
 
             //for each line from the rental 
-            foreach( string s in mediaToRent)
+            foreach(string s in mediaToRent)
             {
                 //match each needed component
                 //populae with your regex to match the format
