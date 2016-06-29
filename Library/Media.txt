@@ -1,0 +1,5 @@
+﻿Type: Book,Title: The Count of Monte Cristo,Length: 928 pages
+Type: DVD,Title: The Count of Monte Cristo,Length: 2h 14m
+Type: Magazine,Title: People,Length: 50 pages
+Type: Book,Title: Pride & Prejudice,Length: 272 pages
+Type: DVD,Title: Avatar,Length: 2h 42m
