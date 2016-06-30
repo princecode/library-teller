@@ -9,10 +9,30 @@ namespace Library
     class Book : Media
     {
 
-        public override string Title { get; set; }
-        public override string Length { get; set; }
-        public override int RentalLength { get; set; }
-        protected DateTime RentedDate { get; set; }
+        public override int RentalLength
+        {
+            get
+            {
+                return 14;
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public override void PrintMediaDetails()
+        {
+            Console.WriteLine("Book {0} ({1})", Title, Length);
+            Console.WriteLine("Rented on: {0}", RentedDate);
+            Console.WriteLine("Due on: {0}", ReturnDueDate());
+        }
+
+        public override DateTime ReturnDueDate()
+        {
+            return RentedDate.AddDays(RentalLength);
+        }
 
 
     }
