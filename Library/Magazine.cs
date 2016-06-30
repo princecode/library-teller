@@ -8,13 +8,29 @@ namespace Library
 {
     class Magazine : Media
     {
+        public override int RentalLength
+        {
+            get
+            {
+                return 7;
+            }
 
-        public override string Title { get; set; }
-        public override string Length { get; set; }
-        public override int RentalLength { get; set; }
-        protected DateTime RentedDate { get; set; }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
 
+        public override void PrintMediaDetails()
+        {
+            Console.WriteLine("Magazine {0} ({1})", Title, Length);
+            Console.WriteLine("Rented on: {0}", RentedDate);
+            Console.WriteLine("Due on: {0}", ReturnDueDate());
+        }
 
-
+        public override DateTime ReturnDueDate()
+        {
+            return RentedDate.AddDays(RentalLength);
+        }
     }
 }
