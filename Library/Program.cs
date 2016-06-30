@@ -32,6 +32,7 @@ namespace Library
 
 
                 Match match = Regex.Match(s, @"^Type: \s*([a-zA-z]+),Title: \s*(.*)+,Length: \s*([0-9a-z a-z]+)$");
+                // more efficient class example: ^Type:\s*(.*),Title:\s*(.*),Length:
                 if (match.Success)
                 {
                     //populate each component with the values from your capture groups
