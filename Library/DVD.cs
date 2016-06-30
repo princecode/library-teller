@@ -6,7 +6,32 @@ using System.Threading.Tasks;
 
 namespace Library
 {
-    class DVD
+    class DVD : Media
     {
+        public override int RentalLength
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public override void PrintMediaDetails()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override DateTime ReturnDueDate()
+        {
+            throw new NotImplementedException();
+
+            
+
     }
+}
 }
