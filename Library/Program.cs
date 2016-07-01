@@ -19,7 +19,7 @@ namespace Library
 
             //populate mediaToRent with the values returned from getFile instead of an empty list e.g. "new List<string>();"
             //implement-D
-            List<string> mediaToRent = new List<string>(@"C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\library-teller\Library");
+            List<string> mediaToRent = new List<string>(@"C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\library-teller\Library\Media.txt");
 
             //create a new list for us to use to store our media objects to rent
             List <Media> rentedMedia = new List<Media>();
@@ -85,7 +85,9 @@ namespace Library
             foreach (Media mediaItem in rentedMedia)
             {
                 //for each mediaItem call PrintMediaDetails()
-                    //implement
+                //implement
+                mediaItem.PrintMediaDetails();
+
             }
 
             //halt the program so we can read the output
