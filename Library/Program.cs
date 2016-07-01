@@ -18,7 +18,7 @@ namespace Library
             FileIO getFile = new FileIO();
 
             //populate mediaToRent with the values returned from getFile instead of an empty list e.g. "new List<string>();"
-            //implement
+            //implement-D
             List<string> mediaToRent = new List<string>(@"C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\library-teller\Library");
 
             //create a new list for us to use to store our media objects to rent
@@ -44,8 +44,13 @@ namespace Library
                     if (type.Equals("Book"))
                     {
                         //create a book object
+                        Book newBook = new Book();
                         //populate the book object with a title and length
+                        newBook.Title = title;
                         //then add the newly created book to rentedMedia
+                        rentedMedia.Add(newBook);
+
+
                     }
                     //complete for the DVD and Magazine media types
                         //implement

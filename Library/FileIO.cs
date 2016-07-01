@@ -21,7 +21,7 @@ namespace Library
                 {
                     //throw appropriate exepction
                     //implement
-                    throw new FileNotFoundException();
+                    throw new FileNotFoundException("File not found", path);
                    
                 }
 
@@ -40,6 +40,7 @@ namespace Library
                     {
                         line = sr.ReadLine();
                         mediaFile.Add(line);
+
                     }
                 }
 
