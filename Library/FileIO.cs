@@ -29,23 +29,22 @@ namespace Library
                 string line;
 
                 //open a StreamReader to the file specifcied in the path variable 
-                //implement
+                
 
-                using (StreamReader sr = new StreamReader("TestFile.txt"))
+                using (StreamReader sr = new StreamReader(path))
                 {
-                    string line;
+                    
                     // Read and display lines from the file until the end of 
                     // the file is reached.
                     while ((line = sr.ReadLine()) != null)
                     {
-                        Console.WriteLine(line);
+                        mediaFile.Add(line);
                     }
                 }
 
                 //while reading a new from file, addd each line to mediaFile
                 //as long as each new line is not null
-                //implement
-
+                
 
                 //remember to close your file
                 //file.Close();

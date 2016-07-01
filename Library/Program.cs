@@ -19,10 +19,10 @@ namespace Library
 
             //populate mediaToRent with the values returned from getFile instead of an empty list e.g. "new List<string>();"
             //implement
-            List<string> mediaToRent = new List<string>();
-            
+            List<string> mediaToRent = new List<string>(@"C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\library-teller\Library");
+
             //create a new list for us to use to store our media objects to rent
-            List<Media> rentedMedia = new List<Media>();
+            List <Media> rentedMedia = new List<Media>();
 
             //for each line from the rental 
             foreach(string s in mediaToRent)
