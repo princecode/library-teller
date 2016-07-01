@@ -38,6 +38,7 @@ namespace Library
                     // the file is reached.
                     while ((line = sr.ReadLine()) != null)
                     {
+                        line = sr.ReadLine();
                         mediaFile.Add(line);
                     }
                 }
@@ -59,9 +60,11 @@ namespace Library
             {
                 //write out the message of e
                 //implement
+                Console.WriteLine(e);
             }
 
             return mediaFile;
+            
         }
 
         //not yet implemented
