@@ -50,10 +50,34 @@ namespace Library
                         //then add the newly created book to rentedMedia
                         rentedMedia.Add(newBook);
 
-
                     }
                     //complete for the DVD and Magazine media types
-                        //implement
+                    //implement-D
+                    if (type.Equals("DvD"))
+                    {
+                        //create a dvd object
+                        DVD newDVD = new DVD();
+                        //populate the dvd object with a title and length
+                        newDVD.Title = title;
+                        //then add the newly created dvd to rentedMedia
+                        rentedMedia.Add(newDVD);
+
+                    }
+
+                    if (type.Equals("Magazine"))
+                    {
+                        //create a dvd object
+                        Magazine newMagazine = new Magazine();
+                        //populate the dvd object with a title and length
+                        newMagazine.Title = title;
+                        //then add the newly created dvd to rentedMedia
+                        rentedMedia.Add(newMagazine);
+
+                    }
+
+
+
+
                 }
             }
 
