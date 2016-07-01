@@ -19,7 +19,7 @@ namespace Library
 
             //populate mediaToRent with the values returned from getFile instead of an empty list e.g. "new List<string>();"
             //implement-D
-            List<string> mediaToRent = new List<string>(@"C:\Users\WeCanCodeIT\Documents\Visual Studio 2015\Projects\library-teller\Library\Media.txt");
+            List<string> mediaToRent = getFile.ReturnMediaFile(@"..\..\media.txt");
 
             //create a new list for us to use to store our media objects to rent
             List <Media> rentedMedia = new List<Media>();
@@ -31,7 +31,7 @@ namespace Library
                 //populae with your regex to match the format
 
 
-                Match match = Regex.Match(s, @"^Type: \s*([a-zA-z]+),Title: \s*(.*)+,Length: \s*([0-9a-z a-z]+)$");
+                Match match = Regex.Match(s, @"^Type: \s*([a-zA-z]+),Title: \s*(.*)+,Length: \s*([0-9a-z a-z]+)$", RegexOptions.IgnoreCase);
                 // more efficient class example: ^Type:\s*(.*),Title:\s*(.*),Length:
                 if (match.Success)
                 {
